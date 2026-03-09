@@ -28,6 +28,11 @@ class Menu:
                 filtered_items.append(item)
         return filtered_items
 
+    def sort_by_popularity(self):
+        # Returns a new list of all items sorted by popularity_rating, highest first
+        # sorted() does not modify self.items — the original menu order is preserved
+        return sorted(self.items, key=lambda item: item.popularity_rating, reverse=True)
+
 
 class Transaction:
     # Represents a single order — a group of FoodItems chosen by a customer
