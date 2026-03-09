@@ -53,6 +53,4 @@ class Customer:
         self.name = name                        # customer's name as a string
         self.purchase_history = purchase_history if purchase_history is not None else []
 
-    def verify(self):
-        # Returns True if this customer has a non-empty name (i.e. is a real user)
-        return len(self.name) > 0
+  

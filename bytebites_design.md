@@ -4,8 +4,6 @@
 | - name: String            |
 | - purchaseHistory: List   |
 +---------------------------+
-| + verify(): Boolean       |
-+---------------------------+
           |
           | places
           v
